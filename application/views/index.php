@@ -1,118 +1,92 @@
-
-<!--
-
-    EL BODY DE LA APLICACION
-
--->
+<!-- ACA VA TODO EL CONTENIDO DE LA PAGINA PRINCIPAL -->
 
 
-<div class="wrapper">
-
-    <!-- -----------------------------------------------------------
-        EL MENU LATERAL QUE SE DESPLEGA
-    ----------------------------------------------------------------
-    -->
-    <nav id="sidebar" >
-        <div class="sidebar-header">
-            <h3>Teras</h3>
-            <strong>T</strong>            </div>
-
-        <ul class="list-unstyled components">
-            <li class="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
-                    <i class="glyphicon glyphicon-home"></i>
-                    Home
-                </a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li><a href="#">Home 1</a></li>
-                    <li><a href="#">Home 2</a></li>
-                    <li><a href="#">Home 3</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="glyphicon glyphicon-briefcase"></i>
-                    Notificaciones
-                </a>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
-                    <i class="glyphicon glyphicon-duplicate"></i>
-                    Información Alumno
-                </a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="glyphicon glyphicon-link"></i>
-                    Horarios
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="glyphicon glyphicon-paperclip"></i>
-                    Ver Notas
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="glyphicon glyphicon-send"></i>
-                    Foro
-                </a>
-            </li>
-        </ul>
 
 
-    </nav>
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+        <!-- El contenido principal de la pagina -->
+            <div id="content">
+                <div class="inner">
+
+                    <!-- Post -->
+                        <article class="box post post-excerpt">
+                            <header>
+                                <!--
+                                    Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+                                    if they get too long. You can also remove the <p> entirely if you don't
+                                    need a subtitle.
+                                -->
+                                <h2>Bienvenidos a Teras</h2>
+                                <p>A free, fully responsive HTML5 site template by HTML5 UP</p>
+                            </header>
 
 
-    <!--  -----------------------------------------------------------------
+                               <div class="info">
+                                <!--
+                                    Note: The date should be formatted exactly as it's shown below. In particular, the
+                                    "least significant" characters of the month should be encapsulated in a <span>
+                                    element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
+                                    Oh, and if you don't need a date for a particular page or post you can simply delete
+                                    the entire "date" element.
 
-        ES EL ENCABEZADO EN BLANCO QUE SE MUESTRA ARRIBA DE LA PAGINA
+                                -->
+                                <span class="date"><span class="month">Jul<span>y</span></span> <span class="day">14</span><span class="year">, 2014</span></span>
+                                <!--
+                                    Note: You can change the number of list items in "stats" to whatever you want.
+                                -->
+                                <ul class="stats">
+                                    <li><a href="#" class="icon fa-comment">16</a></li>
+                                    <li><a href="#" class="icon fa-heart">32</a></li>
+                                    <li><a href="#" class="icon fa-twitter">64</a></li>
+                                    <li><a href="#" class="icon fa-facebook">128</a></li>
+                                </ul>
+                            </div>
 
-        -----------------------------------------------------------------------
-    -->
-    <div id="content">
+                           <!--  ACA IRIAN LAS TABLAS , FORMULARIOS ETC   -->
+                            <p>
+                                <strong>Aca van las cosas de las vistas</strong> Los formularios <strong>tablas y eso</strong>
+                            </p>
+                            <p>
+                                bla bla bla.
+                            </p>
+                        </article>
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-
-                <div class="navbar-header">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                        <i class="glyphicon glyphicon-align-left"></i>
-                        <span>Menu</span>
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                    </ul>
                 </div>
             </div>
-        </nav>
+
+       <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+        <!-- BARRA LATERAL -->
+            <div id="sidebar">
+
+                <!-- Logo -->
+                    <h1 id="logo"><a href="#">TERAS</a></h1>
+
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            <li class="current"><a href="#">Latest Post</a></li>
+                            <li><a href="#">Archives</a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Contact Me</a></li>
+                        </ul>
+                    </nav>
+
+                <!-- BARRA BUSCADORA -->
+                    <section class="box search">
+                        <form method="post" action="#">
+                            <input type="text" class="text" name="search" placeholder="Search" />
+                        </form>
+                    </section>
 
 
-        <!-- -----------------------------------------------------------------------
+                <!-- Copyright, NO SACAR ESTO -->
+                    <ul id="copyright">
+                        <li>&copy; Copyright.</li><li>Design: HTML5 UP</li>
+                    </ul>
 
-            Esta es la parte en donde se van a mostrar los datos que sacamos de la BD
-            Los cuadros, el blog y todo eso
+            </div>
 
-            ---------------------------------------------------------------------
-        -->
-
-        <h2>Aca van los cuadros en la aplicacion</h2>
-        <p>Informacion</p>
-        <p>Se muestran cuadros.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
